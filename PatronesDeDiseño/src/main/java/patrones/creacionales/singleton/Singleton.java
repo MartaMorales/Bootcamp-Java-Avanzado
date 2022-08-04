@@ -1,15 +1,15 @@
 package patrones.creacionales.singleton;
 
-public class PatronSingleton {
+public class Singleton {
 
-    private static PatronSingleton singleton;
+    private static Singleton singleton;
     int contador;
 
-    private PatronSingleton(){} //Lo hacemos privado para que no se pueda instanciar
+    private Singleton(){} //Lo hacemos privado para que no se pueda instanciar
 
-    public static PatronSingleton getInstance(){
+    public static Singleton getInstance(){
         if(singleton == null) {
-            singleton = new PatronSingleton();
+            singleton = new Singleton();
 
             //Solo se podra llamar al constructor desde este metodo y nunca al propio constructor. De esta manera nos
             //aseguramos de que la instancia sea unica

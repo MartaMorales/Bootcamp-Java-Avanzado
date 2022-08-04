@@ -3,24 +3,24 @@ package patrones.creacionales.singleton;
 public class Main {
 
     public static void main(String[] args) {
-        //PatronSingleton singleton = new PatronSingleton();
+        //Singleton singleton = new Singleton();
         //singleton.setContador(15);
         //System.out.println(singleton.getContador());
         //System.out.println(singleton); //Direccion de memoria
 
 
-        //PatronSingleton singleton2 = new PatronSingleton();
+        //Singleton singleton2 = new Singleton();
         //singleton2.setContador(10);
         //System.out.println(singleton2.getContador());
         //System.out.println(singleton2); //Direccion de memoria
 
 //El patron singleton lo que pretende evitar es que se creen nuevas instancias. Por tanto se tiene que operar con la primera instancia que ya habiamos creado
 
-        PatronSingleton singleton = PatronSingleton.getInstance(); //Invocando a la clase estatica y a getInstance tendremos una unica instancia de PatronSingleton
+        Singleton singleton = Singleton.getInstance(); //Invocando a la clase estatica y a getInstance tendremos una unica instancia de Singleton
 
         singleton.setContador(15);
 
-        PatronSingleton singleton1 = PatronSingleton.getInstance();
+        Singleton singleton1 = Singleton.getInstance();
 
         singleton1.setContador(20);
 
